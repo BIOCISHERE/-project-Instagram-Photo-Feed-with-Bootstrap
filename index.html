@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-instagram ms-3 p-2"></i>Instagram
+            </a>
+            <ul class="nav nav-tabs ms-auto">
+                <li class="nav-item ">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Caption:</h6>
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea2" style="height: 100px"></textarea>
+                                        <label for="floatingTextarea2">Add the caption of your post here</label>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary mt-1"><i
+                                            class="bi bi-camera-fill"></i></button>
+                                    <button type="button" class="btn btn-secondary mt-1"><i
+                                            class="bi bi-geo-alt-fill"></i></button>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="dropdown ms-5">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                    data-bs-display="static" aria-expanded="false">
+                    <i class="bi bi-gear-fill"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-lg-end">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <i class="bi bi-grid-3x3-gap"></i>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <i class="bi bi-square-fill"></i>
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <div class="container-fluid">
+                <div class="row mx-auto my-3">
+                    <div class="col mx-auto">
+                        <img src="https://picsum.photos/id/900/500/500" alt="" class="img-fluid">
+                    </div>
+                    <div class="col mx-auto">
+                        <img src="https://picsum.photos/id/800/500/500" alt="" class="img-fluid">
+                    </div>
+                    <div class="col mx-auto">
+                        <img src="https://picsum.photos/id/700/500/500" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row mx-auto my-3">
+                    <div class="col mx-auto">
+                        <img src="https://picsum.photos/id/600/500/500" alt="" class="img-fluid">
+                    </div>
+                    <div class="col mx-auto">
+                        <img src="https://picsum.photos/id/500/500/500" alt="" class="img-fluid">
+                    </div>
+                    <div class="col mx-auto">
+                        <img src="https://picsum.photos/id/400/500/500" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row mx-auto my-3">
+                    <div class="col mx-auto">
+                        <img src="https://picsum.photos/id/300/500/500" alt="" class="img-fluid">
+                    </div>
+                    <div class="col mx-auto">
+                        <img src="https://picsum.photos/id/200/500/500" alt="" class="img-fluid">
+                    </div>
+                    <div class="col mx-auto">
+                        <img src="https://picsum.photos/id/100/500/500" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-6 p-0">
+                        <div class="card border-secundary mb-3">
+                            <div class="card-header">
+                                <span class="float-start fs-4">An amazing sunset!</span><span class="float-end align-top">08/26</span>
+                            </div>
+                            <div class="card-body text-black p-0">
+                                <img src="https://picsum.photos/id/900/500/500" alt="" class="card-img-bottom">
+                                <div>
+                                    <p class="card-title fw-bold fs-5 float-start m-2">538 likes</p><br>
+                                    <p class="card-text float-start mb-4 mx-2">This is an example of a very good photo that you can post on instagram.</p><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-secundary mb-3">
+                            <div class="card-header">
+                                <span class="float-start fs-4">It's calm in the forest</span><span class="float-end align-top">09/28</span>
+                            </div>
+                            <div class="card-body text-black p-0">
+                                <img src="https://picsum.photos/id/600/500/500" alt="" class="card-img-bottom">
+                                <div>
+                                    <p class="card-title fw-bold fs-5 float-start m-2">375 likes</p><br>
+                                    <p class="card-text float-start mb-4 mx-2">This is an example of a very good photo that you can post on instagram.</p><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-secundary mb-3">
+                            <div class="card-header">
+                                <span class="float-start fs-4">A flying fish ✈️!</span><span
+                                    class="float-end align-top">06/13</span>
+                            </div>
+                            <div class="card-body text-black p-0">
+                                <img src="https://picsum.photos/id/700/500/500" alt="" class="card-img-bottom">
+                                <div>
+                                    <p class="card-title fw-bold fs-5 float-start m-2">536 likes</p><br>
+                                    <p class="card-text float-start mb-4 mx-2">This is an example of a very good photo that you can post on instagram.</p><br>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
